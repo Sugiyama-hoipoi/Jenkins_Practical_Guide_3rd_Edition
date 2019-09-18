@@ -44,7 +44,7 @@ public class SampleActionTest {
 		boolean result = action.checkParameter(request);
 		verify(request);
 
-		assertEquals(false, result);
+		assertEquals(true, result);
 	}
 
 	@Test
@@ -61,7 +61,7 @@ public class SampleActionTest {
 
 		assertEquals(false, result);
 	}
-	
+
 	@Test
 	public void testCheckError3() {
 		SampleAction action = new SampleAction();
